@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraX - Montañismo GT | Plan CMI e Identidad de Marca</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: League Spartan -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        aurax: {
+                            cyan: '#5CE1E6',
+                            dark: '#000000',
+                            card: '#0D0D0D',
+                            cardBorder: '#1F1F1F',
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        spartan: ['"League Spartan"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'League Spartan', sans-serif;
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(92, 225, 230, 0.4);
+        }
+        .border-glow {
+            box-shadow: 0 0 15px rgba(92, 225, 230, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-black text-white antialiased selection:bg-aurax-cyan selection:text-black">
+
+    <!-- NAV BAR -->
+    <nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-aurax-cardBorder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- LOGO BRAND -->
+            <div class="flex items-center space-x-3 cursor-pointer" onclick="scrollToTop()">
+                <div class="relative flex items-center justify-center">
+                    <i data-lucide="mountain" class="w-9 h-9 text-aurax-cyan"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-2xl font-black tracking-widest leading-none">AURA<span class="text-aurax-cyan">X</span></span>
+                    <span class="text-[9px] font-bold tracking-[0.25em] text-gray-400">MONTAÑISMO GT</span>
+                </div>
+            </div>
+
+            <!-- DESKTOP NAV -->
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-wider">
+                <a href="#identidad" class="hover:text-aurax-cyan transition-colors">IDENTIDAD</a>
+                <a href="#estrategia" class="hover:text-aurax-cyan transition-colors">PLAN CMI</a>
+                <a href="#simulador" class="hover:text-aurax-cyan transition-colors">SIMULADOR</a>
+                <a href="#spot" class="hover:text-aurax-cyan transition-colors">SPOT MEDIOS</a>
+                <a href="#kpis" class="hover:text-aurax-cyan transition-colors">MATRIZ KPIS</a>
+            </div>
+
+            <!-- CTA HEADER -->
+            <a href="#simulador" class="hidden sm:inline-flex items-center px-5 py-2.5 rounded-full border border-aurax-cyan text-aurax-cyan font-bold text-xs tracking-widest hover:bg-aurax-cyan hover:text-black transition-all shadow-lg hover:shadow-aurax-cyan/20">
+                EXPLORAR RUTAS
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="pt-32 pb-20 md:pt-44 md:pb-32 px-4 relative overflow-hidden border-b border-aurax-cardBorder">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(92,225,230,0.15),transparent_50%)] pointer-events-none"></div>
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-aurax-card border border-aurax-cyan/30 text-aurax-cyan text-xs font-bold tracking-widest mb-6">
+                <i data-lucide="compass" class="w-4 h-4"></i> "CONQUISTANDO A GUATE DESDE LO ALTO"
+            </div>
+            <h1 class="text-4xl md:text-7xl font-black tracking-tight uppercase mb-6 leading-none">
+                Más que caminar, <br><span class="text-aurax-cyan text-glow">Vivir la montaña</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-normal leading-relaxed mb-8">
+                Cuando la ciudad hace demasiado ruido... la montaña tiene la respuesta. Experiencias de senderismo y ascenso de volcanes que inspiran aventura, seguridad y reconexión en Guatemala.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#identidad" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-aurax-cyan text-black font-extrabold tracking-wider text-sm hover:bg-white transition-all shadow-lg shadow-aurax-cyan/20">
+                    VER MANUAL DE IDENTIDAD
+                </a>
+                <a href="#simulador" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-white/20 hover:border-aurax-cyan text-white font-extrabold tracking-wider text-sm hover:text-aurax-cyan transition-all">
+                    SIMULADOR DE VENTAS (CMI)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PILARES DE IDENTIDAD DE MARCA -->
+    <section id="identidad" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-xs font-bold tracking-[0.3em] text-aurax-cyan uppercase mb-2">Manual de Identidad</h2>
+            <h3 class="text-3xl md:text-5xl font-black uppercase">ADN y Filosofía AuraX</h3>
+        </div>
+
+        <!-- MISION, VISION, PROPOSITO -->
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-aurax-card border border-aurax-cardBorder p-8 rounded-2xl relative hover:border-aurax-cyan/50 transition-all">
+                <div class="w-12 h-12 rounded-xl bg-aurax-cyan/10 border border-aurax-cyan/30 flex items-center justify-center text-aurax-cyan mb-6">
+                    <i data-lucide="target" class="w-6 h-6"></i>
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 text-aurax-cyan">Misión</h4>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Organizar y guiar actividades de senderismo y ascenso de volcanes con altos estándares de seguridad, respeto por el medio ambiente y espíritu de comunidad.
+                </p>
+            </div>
+
+            <div class="bg-aurax-card border border-aurax-cardBorder p-8 rounded-2xl relative hover:border-aurax-cyan/50 transition-all">
+                <div class="w-12 h-12 rounded-xl bg-aurax-cyan/10 border border-aurax-cyan/30 flex items-center justify-center text-aurax-cyan mb-6">
+                    <i data-lucide="eye" class="w-6 h-6"></i>
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 text-aurax-cyan">Visión</h4>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Ser la comunidad líder de montañismo y aventura en Guatemala, reconocida por ofrecer experiencias auténticas, seguras y memorables, promoviendo una cultura de exploración responsable.
+                </p>
+            </div>
+
+            <div class="bg-aurax-card border border-aurax-cardBorder p-8 rounded-2xl relative hover:border-aurax-cyan/50 transition-all">
+                <div class="w-12 h-12 rounded-xl bg-aurax-cyan/10 border border-aurax-cyan/30 flex items-center justify-center text-aurax-cyan mb-6">
+                    <i data-lucide="heart" class="w-6 h-6"></i>
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 text-aurax-cyan">Propósito</h4>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Inspirar a las personas a descubrir la naturaleza mediante expediciones seguras que conecten el cuerpo y la mente, superando límites personales.
+                </p>
+            </div>
+        </div>
+
+        <!-- VALORES CORPORATIVOS -->
+        <div class="bg-aurax-card border border-aurax-cardBorder rounded-2xl p-8 mb-16">
+            <h4 class="text-2xl font-black uppercase mb-8 text-center">Valores Institucionales</h4>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="p-4 rounded-xl bg-black border border-aurax-cardBorder">
+                    <div class="font-bold text-aurax-cyan mb-1 flex items-center gap-2"><i data-lucide="zap" class="w-4 h-4"></i> Aventura</div>
+                    <p class="text-xs text-gray-400">Pasión por explorar nuevos destinos y desafiar nuestros propios límites.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-black border border-aurax-cardBorder">
+                    <div class="font-bold text-aurax-cyan mb-1 flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4"></i> Seguridad</div>
+                    <p class="text-xs text-gray-400">Prioridad absoluta mediante planificación responsable y protocolos rigurosos.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-black border border-aurax-cardBorder">
+                    <div class="font-bold text-aurax-cyan mb-1 flex items-center gap-2"><i data-lucide="tree-pine" class="w-4 h-4"></i> Respeto Ecológico</div>
+                    <p class="text-xs text-gray-400">Turismo responsable, dejando cada cúpula natural mejor de como la encontramos.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-black border border-aurax-cardBorder">
+                    <div class="font-bold text-aurax-cyan mb-1 flex items-center gap-2"><i data-lucide="users" class="w-4 h-4"></i> Compañerismo</div>
+                    <p class="text-xs text-gray-400">Comunidad inclusiva basada en la empatía, apoyo mutuo y trabajo en equipo.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-black border border-aurax-cardBorder">
+                    <div class="font-bold text-aurax-cyan mb-1 flex items-center gap-2"><i data-lucide="trending-up" class="w-4 h-4"></i> Superación</div>
+                    <p class="text-xs text-gray-400">Descubrimiento de la fortaleza física y mental a través de la montaña.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-black border border-aurax-cardBorder">
+                    <div class="font-bold text-aurax-cyan mb-1 flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4"></i> Compromiso</div>
+                    <p class="text-xs text-gray-400">Puntualidad, profesionalismo y ética en cada expedición organizada.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IDENTIDAD SENSORIAL Y PALETA -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- COLORES OFICIALES -->
+            <div class="bg-aurax-card border border-aurax-cardBorder p-8 rounded-2xl">
+                <h4 class="text-xl font-bold uppercase mb-6 flex items-center gap-2">
+                    <i data-lucide="palette" class="text-aurax-cyan"></i> Paleta de Colores
+                </h4>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between p-4 rounded-xl bg-black border border-aurax-cardBorder">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-[#5CE1E6] border border-white/20"></div>
+                            <div>
+                                <p class="font-bold text-sm">Cian Claro</p>
+                                <p class="text-xs text-gray-400">Color Primario de Acento</p>
+                            </div>
+                        </div>
+                        <span class="font-mono text-xs text-aurax-cyan">#5CE1E6</span>
+                    </div>
+                    <div class="flex items-center justify-between p-4 rounded-xl bg-black border border-aurax-cardBorder">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-[#000000] border border-white/20"></div>
+                            <div>
+                                <p class="font-bold text-sm">Negro Puro</p>
+                                <p class="text-xs text-gray-400">Fondo y Elegancia</p>
+                            </div>
+                        </div>
+                        <span class="font-mono text-xs text-gray-400">#000000</span>
+                    </div>
+                    <div class="flex items-center justify-between p-4 rounded-xl bg-black border border-aurax-cardBorder">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-[#FFFFFF] border border-white/20"></div>
+                            <div>
+                                <p class="font-bold text-sm">Blanco</p>
+                                <p class="text-xs text-gray-400">Contraste y Legibilidad</p>
+                            </div>
+                        </div>
+                        <span class="font-mono text-xs text-gray-400">#FFFFFF</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IDENTIDAD SENSORIAL -->
+            <div class="bg-aurax-card border border-aurax-cardBorder p-8 rounded-2xl">
+                <h4 class="text-xl font-bold uppercase mb-6 flex items-center gap-2">
+                    <i data-lucide="sparkles" class="text-aurax-cyan"></i> Identidad Sensorial (Aroma)
+                </h4>
+                <p class="text-sm text-gray-300 mb-6">
+                    AuraX evoca la frescura de las cumbres guatemaltecas a través de notas olfativas naturales que transmiten libertad y calma:
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl bg-black border border-aurax-cardBorder text-center">
+                        <i data-lucide="trees" class="w-6 h-6 text-aurax-cyan mx-auto mb-2"></i>
+                        <p class="font-bold text-sm">Pino</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-black border border-aurax-cardBorder text-center">
+                        <i data-lucide="leaf" class="w-6 h-6 text-aurax-cyan mx-auto mb-2"></i>
+                        <p class="font-bold text-sm">Ciprés</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-black border border-aurax-cardBorder text-center">
+                        <i data-lucide="wind" class="w-6 h-6 text-aurax-cyan mx-auto mb-2"></i>
+                        <p class="font-bold text-sm">Eucalipto</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-black border border-aurax-cardBorder text-center">
+                        <i data-lucide="flame" class="w-6 h-6 text-aurax-cyan mx-auto mb-2"></i>
+                        <p class="font-bold text-sm">Madera de Cedro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIMULADOR DE VENTA PERSONAL (CMI) -->
+    <section id="simulador" class="py-20 px-4 bg-aurax-card border-y border-aurax-cardBorder">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-bold tracking-[0.3em] text-aurax-cyan uppercase mb-2">Aplicación Académica CMI</h2>
+                <h3 class="text-3xl md:text-5xl font-black uppercase">Simulador de Venta Personal y Objeciones</h3>
+                <p class="text-gray-400 text-sm mt-3">Selecciona una objeción recurrente del cliente para visualizar la respuesta estratégica según el plan de CMI.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- SELECTOR -->
+                <div class="space-y-4">
+                    <button onclick="setObjecion(1)" id="btn-obj-1" class="w-full text-left p-5 rounded-2xl bg-black border border-aurax-cyan text-white font-bold transition-all flex items-center justify-between">
+                        <span>1. "No tengo tiempo por exámenes de la U"</span>
+                        <i data-lucide="chevron-right" class="w-5 h-5 text-aurax-cyan"></i>
+                    </button>
+                    <button onclick="setObjecion(2)" id="btn-obj-2" class="w-full text-left p-5 rounded-2xl bg-black border border-aurax-cardBorder text-gray-400 hover:border-aurax-cyan transition-all flex items-center justify-between">
+                        <span>2. "No tengo el equipo técnico adecuado"</span>
+                        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    </button>
+                    <button onclick="setObjecion(3)" id="btn-obj-3" class="w-full text-left p-5 rounded-2xl bg-black border border-aurax-cardBorder text-gray-400 hover:border-aurax-cyan transition-all flex items-center justify-between">
+                        <span>3. "Me da miedo no tener la condición física"</span>
+                        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <!-- RESPUESTA DINÁMICA -->
+                <div class="bg-black border border-aurax-cyan/40 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="inline-block px-3 py-1 rounded-full bg-aurax-cyan/10 border border-aurax-cyan/30 text-aurax-cyan text-xs font-bold mb-4">
+                            RESPUESTA ESTRATÉGICA AURA<span class="text-white">X</span>
+                        </div>
+                        <h4 id="obj-title" class="text-lg font-bold text-white mb-4">Objeción: Tiempo de estudio</h4>
+                        <p id="obj-desc" class="text-gray-300 text-sm leading-relaxed mb-6">
+                            "Nuestras salidas de fin de semana están planificadas de un solo día (micro-expediciones). Desconectar 6 horas en la montaña mejora la retención de memoria, combate el estrés académico y te devuelve con energía renovada para tus exámenes."
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-aurax-cardBorder flex items-center justify-between text-xs text-aurax-cyan font-bold">
+                        <span>TÁCTICA: Salud Mental & Rendimiento</span>
+                        <i data-lucide="shield-check" class="w-4 h-4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPOT PUBLICITARIO / GUION DE MEDIOS -->
+    <section id="spot" class="py-20 px-4 max-w-5xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-xs font-bold tracking-[0.3em] text-aurax-cyan uppercase mb-2">Difusión masiva</h2>
+            <h3 class="text-3xl md:text-5xl font-black uppercase">Spot de Radio / Video Publicitario</h3>
+        </div>
+
+        <div class="bg-aurax-card border border-aurax-cardBorder rounded-2xl p-8 relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 opacity-5">
+                <i data-lucide="radio" class="w-64 h-64 text-aurax-cyan"></i>
+            </div>
+            <div class="relative z-10 space-y-6">
+                <div class="p-4 rounded-xl bg-black border border-aurax-cardBorder text-xs font-mono text-aurax-cyan">
+                    [EFECTO DE SONIDO: Viento de montaña suave + pisadas sobre ramas y grava]
+                </div>
+                <blockquote class="text-lg md:text-xl font-medium leading-relaxed text-gray-200 border-l-4 border-aurax-cyan pl-6 italic">
+                    "Cuando la ciudad hace demasiado ruido... la montaña tiene la respuesta. En AuraX Montañismo GT te invitamos a descubrir senderos, volcanes y paisajes únicos de Guatemala mientras fortaleces tu cuerpo, despejas tu mente y conectas con la naturaleza..."
+                </blockquote>
+                <div class="p-4 rounded-xl bg-black border border-aurax-cardBorder text-xs font-mono text-aurax-cyan">
+                    [VOZ EN OFF ENÉRGICA Y SOBRIA]: "AuraX Montañismo GT... Conquista cada cima."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MATRIZ DE KPIS / PLAN CMI -->
+    <section id="kpis" class="py-20 px-4 bg-aurax-card border-t border-aurax-cardBorder">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-bold tracking-[0.3em] text-aurax-cyan uppercase mb-2">Medición de Impacto</h2>
+                <h3 class="text-3xl md:text-5xl font-black uppercase">Matriz de Indicadores (KPIs)</h3>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm border-collapse">
+                    <thead>
+                        <tr class="border-b border-aurax-cardBorder bg-black text-aurax-cyan font-bold uppercase text-xs">
+                            <th class="p-4">Herramienta</th>
+                            <th class="p-4">Actividad de Campaña</th>
+                            <th class="p-4">Medio / Soporte</th>
+                            <th class="p-4">Indicador (KPI)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-aurax-cardBorder text-gray-300">
+                        <tr class="hover:bg-black/50 transition-colors">
+                            <td class="p-4 font-bold text-white">Publicidad Orgánica</td>
+                            <td class="p-4">Reels Formativos (Técnicas 80/20)</td>
+                            <td class="p-4">Instagram / TikTok</td>
+                            <td class="p-4 text-aurax-cyan font-mono">Guardados y Alcance Orgánico</td>
+                        </tr>
+                        <tr class="hover:bg-black/50 transition-colors">
+                            <td class="p-4 font-bold text-white">Marketing Directo</td>
+                            <td class="p-4">Envío de 'Pase VIP' Registro Anticipado</td>
+                            <td class="p-4">Correo Electrónico (Opt-In)</td>
+                            <td class="p-4 text-aurax-cyan font-mono">Tasa de Apertura (&gt;35%)</td>
+                        </tr>
+                        <tr class="hover:bg-black/50 transition-colors">
+                            <td class="p-4 font-bold text-white">Relaciones Públicas</td>
+                            <td class="p-4">Boletín Ecológico & No Greenwashing</td>
+                            <td class="p-4">Medios Digitales Regionales</td>
+                            <td class="p-4 text-aurax-cyan font-mono">Menciones en Medios Digitales</td>
+                        </tr>
+                        <tr class="hover:bg-black/50 transition-colors">
+                            <td class="p-4 font-bold text-white">Venta Personal</td>
+                            <td class="p-4">Asesoría Directa de Equipo / Rutas</td>
+                            <td class="p-4">Mensajería Directa (DM / WhatsApp)</td>
+                            <td class="p-4 text-aurax-cyan font-mono">Tasa de Conversión de Consultas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-aurax-cardBorder bg-black text-center text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-4">
+            <div class="flex items-center justify-center space-x-2">
+                <i data-lucide="mountain" class="w-5 h-5 text-aurax-cyan"></i>
+                <span class="font-bold text-white tracking-widest text-sm">AURA<span class="text-aurax-cyan">X</span> MONTAÑISMO GT</span>
+            </div>
+            <p>"Que el ruido del mundo se convierta en silencio."</p>
+            <p class="text-gray-600">Universidad de San Carlos de Guatemala - CUNOC | Quetzaltenango</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT DE INTERACTIVIDAD -->
+    <script>
+        lucide.createIcons();
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        const objeciones = {
+            1: {
+                title: '1. "No tengo tiempo por exámenes de la U"',
+                desc: '"Nuestras salidas de fin de semana están planificadas de un solo día (micro-expediciones). Desconectar 6 horas en la montaña mejora la retención de memoria, combate el estrés académico y te devuelve con energía renovada para tus exámenes."',
+                tactic: 'Salud Mental & Rendimiento Academic'
+            },
+            2: {
+                title: '2. "No tengo el equipo técnico adecuado"',
+                desc: '"Para nuestras rutas de iniciación no necesitas equipo profesional costoso. Te brindamos una guía previa de vestimenta básica con lo que ya tienes en casa y te asesoramos para tus primeras compras."',
+                tactic: 'Accesibilidad & Guía Progresiva'
+            },
+            3: {
+                title: '3. "Me da miedo no tener la condición física"',
+                desc: '"Contamos con rutas categorizadas por nivel de exigencia. Nuestras expediciones llevan guías de ritmo adaptable para asegurar que todos disfruten la experiencia sin presiones."',
+                tactic: 'Inclusión & Acompañamiento Seguro'
+            }
+        };
+
+        function setObjecion(id) {
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`btn-obj-${i}`);
+                if (i === id) {
+                    btn.className = "w-full text-left p-5 rounded-2xl bg-black border border-aurax-cyan text-white font-bold transition-all flex items-center justify-between";
+                } else {
+                    btn.className = "w-full text-left p-5 rounded-2xl bg-black border border-aurax-cardBorder text-gray-400 hover:border-aurax-cyan transition-all flex items-center justify-between";
+                }
+            }
+
+            document.getElementById('obj-title').innerText = objeciones[id].title;
+            document.getElementById('obj-desc').innerText = objeciones[id].desc;
+        }
+    </script>
+</body>
+</html>
